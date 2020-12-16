@@ -1,0 +1,16 @@
+GET http://localhost:3000/api/information/
+
+###
+
+POST http://localhost:3000/api/information/
+Content-Type: application/json
+
+{
+    "firstname": "Lyka Mae",
+    "lastname": "Binongo",
+    "address": "Sitio Lomboy, Tag Os, Matalom , Leyte",
+    "number": "09999999999",
+    "email": "lykamoxx@gmail.com",
+    "birthdate": "August 9 , 2000",
+    "birthplace": "Manila, Philippines"
+}
