@@ -55,7 +55,7 @@ Information.getAll = result =>{
 };
 
 Information.updateById = (id, information, result) => {
-    sql.query('update information set firstname = ? , lastname = ?, address=?, number=?, email=?, birthdate=?, birthplace=?',[information.firstname,information.lastname,information.address,information.number,information.email,information.birthdate,information.birthplace],(err,res)=>{
+    sql.query('update information set firstname = ? , lastname = ?, address=?, number=?, email=?, birthdate=?, birthplace=? where id = ?',[information.firstname,information.lastname,information.address,information.number,information.email,information.birthdate,information.birthplace, id],(err,res)=>{
         if(err){
             console.log("Error: ", err);
             result(err,null);
