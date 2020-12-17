@@ -47,9 +47,9 @@ exports.findid = (req,res) => {
   Information.findById(req.params.id, (err, data) =>{
     if(err){
       res.status(404).render('404');
+    }else{
+      res.render('updateinformation', {data: data});
     }
-    
-    res.render('updateinformation', {data: data});
   })
 }
 
